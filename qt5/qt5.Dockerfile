@@ -8,7 +8,7 @@ RUN apt-get install -y -q \
 WORKDIR /project
 RUN git clone https://github.com/COVESA/dlt-viewer.git
 WORKDIR /project/dlt-viewer/plugin
-RUN git clone -b qt6 https://github.com/sevketcaba/DLT-Message-Analyzer.git
+RUN git clone https://github.com/svlad-90/DLT-Message-Analyzer.git
 RUN echo '\nadd_subdirectory(DLT-Message-Analyzer/dltmessageanalyzerplugin/src)\n' >> ./CMakeLists.txt
 
 WORKDIR /project/dlt-viewer
